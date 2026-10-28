@@ -1,0 +1,19 @@
+{
+  "name": "saucedemo-playwright-automation-js",
+  "version": "1.0.0",
+  "description": "Playwright + JavaScript UI automation for the SauceDemo web application, derived from a 53-case manual test suite",
+  "author": "Anup Pantha",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:chromium": "playwright test --project=chromium",
+    "test:headed": "playwright test --headed --project=chromium",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0"
+  }
+}
